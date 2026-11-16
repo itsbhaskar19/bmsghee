@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMS Ghee</title>
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/products.css">
+    <link rel="stylesheet" href="./assets/css/farm.css">
+    <link rel="stylesheet" href="./assets/css/contact.css">
+    <link rel="stylesheet" href="./assets/css/cart.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 80px;
+        }
+
+        #site-header {
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        .page-section {
+            scroll-margin-top: 80px;
+        }
+    </style>
+</head>
+<body>
+    <header id="site-header">
+        <div id="container">
+            <a href="#home" class="logo">BMS Ghee</a>
+            <button class="menu-toggle" type="button" aria-label="Open menu" aria-controls="main-navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav id="main-navigation" class="site-nav" aria-label="Main navigation">
+                <ul id="menu-cart">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#products" class="nav-link">Products</a></li>
+                    <li><a href="#farm-section" class="nav-link">Our Farm</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li><a href="#products" class="nav-link" id="order">Order on WhatsApp</a></li>
+                    <li id="cart">
+                        <a href="#cart-section" aria-label="Go to shopping cart">
+                            <img id="cart-image" src="./assets/images/trolley.png" alt="Cart">
+                            <span id="cart-count">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="page-section">
+            <div id="hero">
+                <div id="hero-inner">
+                    <p id="farm">Farm fresh · West Godavari</p>
+                    <h1 id="pure">Pure buffalo Ghee from the Godavari</h1>
+                    <p id="watch">Watch it happen: from the first milk of the morning to a golden jar of ghee.</p>
+                    <div class="buttons">
+                        <a class="btn btn-solid" href="#products">See our products</a>
+                        <a class="btn btn-outline" href="#farm-section">Our farm</a>
+                    </div>
+                </div>
+                <div id="hero-two">
+                    <img id="img" src="./assets/images/From Buffalo Milk to Golden Ghee.gif" alt="From buffalo milk to golden ghee">
+                </div>
+                <ul id="destag">
+                    <li><button class="correctbut" type="button" aria-label="Yes">✓</button> Our own buffaloes</li>
+                    <li><button class="correctbut" type="button" aria-label="Yes">✓</button> No adulteration</li>
+                    <li><button class="correctbut" type="button" aria-label="Yes">✓</button> Small batches</li>
+                    <li><button class="correctbut" type="button" aria-label="Yes">✓</button> FSSAI [NUMBER]</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="products" class="products-section page-section">
+            <h2 class="section-title">Our products</h2>
+            <div class="featured-product">
+                <div class="featured-image">
+                    <img id="first" src="./assets/images/products/main.png" alt="BMS Buffalo Ghee">
+                </div>
+                <div class="featured-details">
+                    <span class="product-tag">Pure Ghee</span>
+                    <h2 class="name">Buffalo Ghee</h2>
+                    <p class="product-description">Ships anywhere in India · 1 L jar. Made from our own buffalo milk.</p>
+                    <div class="featured-bottom">
+                        <h2 class="price">₹800</h2>
+                        <button type="button" class="add-cart" data-name="Buffalo Ghee" data-price="800">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="other-products">
+                <div class="product-card">
+                    <div  class="small-product-image"><img id="milkimg" src="./assets/images/products/milk.jpg" alt="Milk"></div>
+                    <h3 class="milk">Milk</h3>
+                    <span class="delivery-tag">Local delivery</span>
+                    <p class="small-price">₹80 / L</p>
+                    <button type="button" class="add-cart" data-name="Milk" data-price="80">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <div class="small-product-image"><img id="curd" src="./assets/images/products/curd.jpg" alt="Curd"></div>
+                    <h3 class="curd">Curd</h3>
+                    <span class="delivery-tag">Local delivery</span>
+                    <p class="small-price">₹60 / L</p>
+                    <button type="button" class="add-cart" data-name="Curd" data-price="60">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <div class="small-product-image"><img id="paneer" src="./assets/images/products/paneer.jpg" alt="Paneer"></div>
+                    <h3 class="paneer">Paneer</h3>
+                    <span class="delivery-tag">Local delivery</span>
+                    <p class="small-price">₹800 / kg</p>
+                    <button type="button" class="add-cart" data-name="Paneer" data-price="800">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <div class="small-product-image"><img id="junnu" src="./assets/images/products/junnu.jpg" alt="Junnu"></div>
+                    <h3 class="junnu">Junnu</h3>
+                    <span class="delivery-tag seasonal">Seasonal</span>
+                    <p class="small-price">₹850 / kg</p>
+                    <button type="button" class="add-cart" data-name="Junnu" data-price="850">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="farm-section" class="page-section">
+            <section class="process-section">
+                <div class="section-container">
+                    <h2 class="section-title">How we make it</h2>
+                    <div class="process-cards">
+                        <div class="process-card">
+                            <span class="step-number">1</span>
+                            <video class="process-video" autoplay muted loop playsinline preload="metadata">
+                                <source src="./assets/images/buffalos/milk video.mp4" type="video/mp4">
+                             
+                            </video>
+                            <h3>Milk</h3>
+                        </div>
+                        <div class="process-card">
+                            <span class="step-number">2</span>
+                            <!-- <video class="process-video" controls playsinline preload="metadata"> -->
+                                <img class="process-video" src="./assets/images/buffalos/curd video.gif">
+                                <!-- <source src="./assets/videos/curd.mp4" type="video/mp4"> -->
+                              
+                            </video>
+                            <h3>Curd</h3>
+                        </div>
+                        <div class="process-card">
+                            <span class="step-number">3</span>
+                            <!-- <video class="process-video" controls playsinline preload="metadata">
+                                 <source src="./assets/videos/butter.mp4" type="video/mp4"> -->
+                              <img class="process-video" src="./assets/images/buffalos/paneer.gif">
+                            <!-- </video>  -->
+                            <h3>Paneer</h3>
+                        </div>
+                        <div class="process-card">
+                            <span class="step-number">4</span>
+                            <!-- <video class="process-video" controls playsinline preload="metadata">
+                               <source src="./assets/videos/ghee.mp4" type="video/mp4"> -->
+                            <img class="process-video" src="./assets/images/buffalos/ghee.gif">   
+                            <!-- </video> --> 
+                            <h3>Ghee</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section  class="buffalo-section">
+                <div class="section-container">
+                    <h2 class="section-title">Meet our buffaloes</h2>
+                    <div class="buffalo-container">
+                        <div class="buffalo-card"><div class="buffalo-image"><img src="./assets/images/buffalos/1.jpg" alt="Murrah buffalo"></div><p>Murrah</p></div>
+                        <div class="buffalo-card"><div class="buffalo-image"><img src="./assets/images/buffalos/2.jpg" alt="Godavari buffalo"></div><p>Godavari</p></div>
+                        <div class="buffalo-card"><div class="buffalo-image"><img src="./assets/images/buffalos/3.jpg" alt="Pandharpuri buffalo"></div><p>Pandharpuri</p></div>
+                        <div class="buffalo-card"><div class="buffalo-image"><img src="./assets/images/buffalos/4.jpg" alt="Toda buffalo"></div><p>Toda</p></div>
+                        <div class="buffalo-card"><div class="buffalo-image"><img src="./assets/images/buffalos/5.jpg" alt="South Kanara buffalo"></div><p>South Kanara</p></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="order-section">
+                <div class="order-banner">
+                    <div class="order-content">
+                        <h2>Order today</h2>
+                        <p>Fresh items delivered locally. Ghee shipped across India. Message us to order.</p>
+                    </div>
+                    <a href="https://wa.me/919392704153" class="whatsapp-btn" target="_blank" rel="noopener">Order on WhatsApp</a>
+                </div>
+            </section>
+        </section>
+
+        <section id="contact" class="page-section">
+            <section class="contact-hero">
+                <div class="contact-hero-content">
+                    <span class="hero-tag">GET IN TOUCH</span>
+                    <h1>We'd love to <br>hear from you.</h1>
+                    <p>Have questions about our fresh dairy products? Want to place an order? We're just a message away.</p>
+                    <a href="https://wa.me/919392704153" target="_blank" rel="noopener" class="hero-btn">Chat with us</a>
+                </div>
+                <div class="contact-hero-image">
+                    <img src="./assets/images/contact.jpg" alt="Fresh dairy products from BMS Ghee">
+                </div>
+            </section>
+
+            <section class="contact-section">
+                <div class="section-heading">
+                    <h2>Contact information</h2>
+                    <p>Reach out to us through any of the following options.</p>
+                </div>
+                <div class="contact-cards">
+                    <div class="contact-card">
+                        <div class="contact-icon" aria-hidden="true">☎</div>
+                        <h3>Call us</h3>
+                        <p>Have questions? Give us a call.</p>
+                        <a href="tel:+919392704153">+91 93927 04153</a>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon" aria-hidden="true">✉</div>
+                        <h3>Email us</h3>
+                        <p>Send us your queries or suggestions.</p>
+                        <a href="mailto:yelikebhaskar@gmail.com">yelikebhaskar@gmail.com</a>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon" aria-hidden="true">☏</div>
+                        <h3>WhatsApp</h3>
+                        <p>Message us directly to place your order.</p>
+                        <a href="https://wa.me/919392704153" target="_blank" rel="noopener">Chat with us</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact-order-section">
+                <div class="contact-order-banner">
+                    <div class="order-content">
+                        <h2>Freshness is just a message away.</h2>
+                        <p>Fresh dairy products delivered locally. Pure ghee shipped across India. Contact us today!</p>
+                    </div>
+                    <a href="./products.html" target="_blank" rel="noopener" class="whatsapp-btn">Order on WhatsApp</a>
+                </div>
+            </section>
+        </section>
+
+        <section id="cart-section" class="cart-section page-section">
+            <h2 class="cart-heading">Your Shopping Cart</h2>
+            <p class="cart-subheading">Review your selected fresh products before ordering.</p>
+            <div class="cart-layout">
+                <section class="cart-products">
+                    <div class="cart-header">
+                        <h2>Cart Items</h2>
+                        <a href="#products" class="continue-shopping">+ Add More Products</a>
+                    </div>
+                    <div class="cart-container">
+    
+                    <div id="cart-items"></div>
+                </section>
+                <aside class="order-summary">
+                    <h2>Order Summary</h2>
+                    <div class="summary-row"><span>Subtotal</span><span id="cart-subtotal">₹0.00</span></div>
+                    <div class="summary-row"><span>Delivery</span><span>To be confirmed</span></div>
+                    <div class="summary-divider"></div>
+                    <div class="summary-row total-row"><strong>Total</strong><strong id="cart-total">₹0.00</strong></div>
+                    <button class="checkout-btn" type="button" onclick="checkoutWhatsApp()">Order on WhatsApp</button>
+                    <p class="checkout-note">Delivery charges, if applicable, will be confirmed before your order is finalized.</p>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <h2>BMS Ghee</h2>
+            <p>Fresh from our farm, naturally good.</p>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#products">Products</a>
+                <a href="#farm-section">Our Farm</a>
+                <a href="#contact">Contact</a>
+                <a href="#cart-section">Cart</a>
+            </div>
+            <p class="copyright">© 2026 BMS Ghee. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/navigation.js"></script>
+</body>
+</html>

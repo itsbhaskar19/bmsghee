@@ -1,0 +1,270 @@
+
+:root {
+    --font-heading: 'Playfair Display', Georgia, serif;
+    --font-body: 'Poppins', Arial, sans-serif;
+    --green: #2F6B3A;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-body);
+    color: #1E1E1E;
+    overflow-x: hidden;
+}
+
+
+/* HEADER */
+
+#container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: #DDF3D8;
+    border-color: #C6E6BF;
+    padding: 0 24px;
+    height: 80px;
+}
+
+nav {
+    min-width: 0;
+}
+
+#menu-cart {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    color: #1F5A2B;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 26px;
+    font-family: var(--font-heading);
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #1E1E1E;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+#order {
+    display: inline-block;
+    background-color: #2F6B3A;
+    color: #FFFFFF;
+    border-radius: 25px;
+    padding: 12px 20px;
+}
+
+#cart {
+    position: relative;
+}
+
+#cart-image {
+    display: block;
+    width: 26px;
+    height: 26px;
+}
+
+#cart-count {
+    position: absolute;
+    top: -5px;
+    right: -8px;
+    background-color: #2F6B3A;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 10px;
+}
+
+
+/* COMMON SECTION CONTAINER */
+
+.section-container {
+    width: 83%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.section-title {
+    font-family: var(--font-heading);
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0 0 32px;
+}
+
+
+/* HOW WE MAKE IT */
+
+.process-section {
+    background-color: #F1F8EF;
+    padding: 60px 0 45px;
+    margin: 0 10px;
+}
+
+.process-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    grid-template-rows: repeat(1,250px);
+    gap: 18px;
+}
+
+.process-card {
+    position: relative;
+    background-color: #FFFFFF;
+    padding: 24px 17px 17px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(40, 80, 45, 0.06);
+}
+
+.step-number {
+    position: absolute;
+    top: -17px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--green);
+    color: #FFFFFF;
+
+    border-radius: 50%;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+/* VIDEO STYLING */
+
+.process-video {
+    display: block;
+    width: 100%;
+    height: 190px;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+    border: none;
+    outline: none;
+
+    background: transparent;
+}
+
+.process-card h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 9px 0 0;
+}
+
+
+/* MEET OUR BUFFALOES */
+
+.buffalo-section {
+    padding: 55px 0 40px;
+}
+
+.buffalo-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 18px;
+}
+
+.buffalo-card {
+    text-align: center;
+}
+
+.buffalo-image {
+    width: 100%;
+    height: 140px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.buffalo-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.buffalo-card p {
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+
+/* ORDER BANNER */
+
+.order-section {
+    width: 83%;
+    max-width: 1200px;
+    margin: 25px auto 20px;
+}
+
+.order-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+
+    background: linear-gradient(110deg, #205D30, #3B914F);
+
+    padding: 38px 45px;
+    border-radius: 25px;
+}
+
+.order-content h2 {
+    color: #FFFFFF;
+    font-family: var(--font-heading);
+    font-size: 32px;
+    font-weight: 600;
+    margin: 0 0 8px;
+}
+
+.order-content p {
+    color: #E5F3E6;
+    font-size: 15px;
+    margin: 0;
+    line-height: 1.7;
+}
+
+.whatsapp-btn {
+    display: inline-block;
+    text-decoration: none;
+    white-space: nowrap;
+
+    background-color: #FFFFFF;
+    color: #246333;
+
+    padding: 16px 30px;
+    border-radius: 40px;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+    background-color: #E8F4E8;
+    transform: translateY(-3px);
+}

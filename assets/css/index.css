@@ -1,0 +1,278 @@
+
+:root{
+   --font-heading: 'Playfair Display', Georgia, serif;
+   --font-body: 'Poppins', Arial, sans-serif;
+   --green: #2F6B3A;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-body);
+  color: #1E1E1E;
+  overflow-x: hidden;
+}
+
+#container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  background-color: #DDF3D8;
+  border-color: #C6E6BF;
+  padding: 0 24px;
+  height: 80px;
+}
+
+nav {
+  min-width: 0;
+}
+
+h1 {
+  font-family: var(--font-heading);
+}
+
+#menu-cart {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#cart {
+  position: relative;
+}
+
+#cart-image {
+  display: block;
+  width: 26px;
+  height: 26px;
+}
+
+#cart-count {
+  position: absolute;
+  top: -5px;
+  right: -8px;
+}
+
+.logo {
+  color: #1F5A2B;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 26px;
+  font-family: var(--font-heading);
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #1E1E1E;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+#order{
+  display: inline-block;
+  background-color: #2F6B3A;
+  color: #FFFFFF;
+  border-radius: 25px;
+  padding: 12px 20px;
+}
+
+#cart-count{
+  background-color: #2F6B3A;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 10px;
+}
+
+#hero{
+  width: 100%;
+  min-height: 550px;
+  background-color: #EDF9EA;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 40px 50px;
+  gap: 20px 40px;
+}
+
+#hero-inner{
+  width: calc(50% - 20px);
+  min-width: 0;
+  height: auto;
+  position: relative;
+}
+
+#farm{
+  margin: 0 0 20px;
+  background-color: #FFFFFF;
+  position: static;
+  display: inline-block;
+  padding: 7px 15px;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(47, 107, 58, 0.12);
+  color: #2F6B3A;
+}
+
+#pure{
+  position: static;
+  margin: 0;
+  font-size: 54px;
+  line-height: 1.1;
+}
+
+#watch{
+  position: static;
+  margin: 20px 0;
+  color: #5C5C5C;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+#hero-two{
+  width: calc(50% - 20px);
+  min-width: 0;
+  height: 420px;
+  background-color: black;
+  z-index: 1;
+  border-radius: 28px;
+  box-shadow: 0 20px 70px rgba(31, 74, 40, 0.28);
+  overflow: hidden;
+}
+
+#img{
+  z-index: 1;
+  opacity: 0.9;
+  display: block;
+  border-radius: 28px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.btn-solid {
+  background: #2F6B3A;
+  color: #FFFFFF;
+  padding: 16px 34px;
+  font-size: 16px;
+}
+
+.btn-outline {
+  border: 2px solid var(--green);
+  color: #2F6B3A;
+  padding: 14px 30px;
+  font-size: 16px;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  font-family: var(--font-body);
+  font-weight: 600;
+  border-radius: 30px;
+}
+
+#destag{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#destag li{
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background-color: #FFFFFF;
+  color: #2F6B3A;
+  padding: 7px 12px;
+  border-radius: 16px;
+  font-size: 12px;
+  white-space: nowrap;
+  box-shadow: 0 2px 8px rgba(47, 107, 58, 0.12);
+}
+
+.correctbut{
+  background-color: #EDF9EA;
+  color: #2F6B3A;
+  border: none;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+}
+
+#cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    background: #fff;
+}
+
+.cart-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+.cart-details {
+    flex: 1;
+}
+
+.cart-details h4 {
+    margin: 0 0 8px;
+}
+
+.cart-details p {
+    margin: 0 0 10px;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.quantity button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background: #eee;
+    font-size: 18px;
+}
+

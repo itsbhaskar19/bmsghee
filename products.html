@@ -1,0 +1,234 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BMS Ghee Products</title>
+
+    <link rel="stylesheet" href="./assets/css/index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/css/products.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div id="container">
+
+            <a href="./index.html" class="logo">BMS Ghee</a>
+
+            <button class="menu-toggle" type="button" aria-label="Open menu" aria-controls="main-navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav id="main-navigation" class="site-nav">
+                <ul id="menu-cart">
+
+                    <li><a href="./index.html" class="nav-link">Home</a></li>
+                    <li><a href="./products.html" class="nav-link">Products</a></li>
+                    <li><a href="./farm.html" class="nav-link">Our Farm</a></li>
+                    <li><a href="./contact.html" class="nav-link">Contact</a></li>
+
+                    <li>
+                        <a href="./products.html" class="nav-link" id="order">
+                            Order on WhatsApp
+                        </a>
+                    </li>
+
+                    <li id="cart">
+                      <a href="./cart.html">
+                         <img id="cart-image" src="./assets/images/trolley.png" alt="Cart">
+                        <span id="cart-count">0</span>
+                      </a> 
+                    </li>
+
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <!-- PRODUCTS SECTION -->
+
+    <main class="products-section">
+
+        <h1 class="section-title">Our products</h1>
+
+
+        <!-- FEATURED PRODUCT -->
+
+        <div class="featured-product">
+
+            <div class="featured-image">
+
+                <img src="./assets/images/products/main.png"
+                     alt="BMS Buffalo Ghee">
+
+            </div>
+
+
+            <div class="featured-details">
+
+                <span class="product-tag">Pure Ghee</span>
+
+                <h2>Buffalo Ghee</h2>
+
+                <p class="product-description">
+                    Ships anywhere in India · 1 L jar.
+                    Made from our own buffalo milk.
+                </p>
+
+
+                <div class="featured-bottom">
+
+                    <h2 class="price">₹800</h2>
+
+                    <button class="add-cart"
+                        data-name="Buffalo Ghee"
+                        data-price="800">
+
+                        Add to Cart
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- OTHER PRODUCTS -->
+
+        <div class="other-products">
+
+
+            <!-- MILK -->
+
+            <div class="product-card">
+
+                <div class="small-product-image">
+                    <img src="./assets/images/products/milk.jpg" alt="Milk">
+                </div>
+
+                <h3>Milk</h3>
+
+                <span class="delivery-tag">Local delivery</span>
+
+                <p class="small-price">₹80 / L</p>
+
+                <button class="add-cart"
+                    data-name="Milk"
+                    data-price="80">
+
+                    Add to Cart
+
+                </button>
+
+            </div>
+
+
+
+            <!-- CURD -->
+
+            <div class="product-card">
+
+                <div class="small-product-image">
+                    <img src="./assets/images/products/curd.jpg" alt="Curd">
+                </div>
+
+                <h3>Curd</h3>
+
+                <span class="delivery-tag">Local delivery</span>
+
+                <p class="small-price">₹60 / L</p>
+
+                <button class="add-cart"
+                    data-name="Curd"
+                    data-price="60">
+
+                    Add to Cart
+
+                </button>
+
+            </div>
+
+
+
+            <!-- PANEER -->
+
+            <div class="product-card">
+
+                <div class="small-product-image">
+                    <img src="./assets/images/products/paneer.jpg" alt="Paneer">
+                </div>
+
+                <h3>Paneer</h3>
+
+                <span class="delivery-tag">Local delivery</span>
+
+                <p class="small-price">₹800 / kg</p>
+
+                <button class="add-cart"
+                    data-name="Paneer"
+                    data-price="800">
+
+                    Add to Cart
+
+                </button>
+
+            </div>
+
+
+
+            <!-- JUNNU -->
+
+            <div class="product-card">
+
+                <div class="small-product-image">
+                    <img src="./assets/images/products/junnu.jpg" alt="Junnu">
+                </div>
+
+                <h3>Junnu</h3>
+
+                <span class="delivery-tag seasonal">Seasonal</span>
+
+                <p class="small-price">₹850 / kg</p>
+
+                <button class="add-cart"
+                    data-name="Junnu"
+                    data-price="850">
+
+                    Add to Cart
+
+                </button>
+
+            </div>
+
+
+        </div>
+
+    </main>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/navigation.js"></script>
+
+</body>
+</html>

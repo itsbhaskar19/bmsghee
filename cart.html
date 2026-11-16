@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BMS Ghee - Shopping Cart</title>
+
+    <link rel="stylesheet" href="./assets/css/cart.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+
+        <div id="container">
+
+            <a href="./index.html" class="logo">BMS Ghee</a>
+
+            <button class="menu-toggle" type="button" aria-label="Open menu" aria-controls="main-navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav id="main-navigation" class="site-nav">
+
+                <ul id="menu-cart">
+
+                    <li>
+                        <a href="./index.html" class="nav-link">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="./products.html" class="nav-link">Products</a>
+                    </li>
+
+                    <li>
+                        <a href="./farm.html" class="nav-link">Our Farm</a>
+                    </li>
+
+                    <li>
+                        <a href="./contact.html" class="nav-link">Contact</a>
+                    </li>
+
+                    <li>
+                        <a href="./products.html"
+                           class="nav-link" id="order"
+                           target="_blank">
+                            Order on WhatsApp
+                        </a>
+                    </li>
+
+                    <li id="cart">
+
+                        <a href="./cart.html" class="cart-link">
+
+                            <img id="cart-image"
+                                src="./assets/images/trolley.png"
+                                alt="Cart">
+
+                            <span id="cart-count">0</span>
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- CART SECTION -->
+
+    <main class="cart-section">
+
+        <h1 class="cart-heading">Your Shopping Cart</h1>
+
+        <p class="cart-subheading">
+            Review your selected fresh products before ordering.
+        </p>
+
+
+        <div class="cart-layout">
+
+
+            <!-- CART PRODUCTS -->
+
+            <section class="cart-products">
+
+                <div class="cart-header">
+
+                    <h2>Cart Items</h2>
+
+                    <a href="./products.html" class="continue-shopping">
+                        + Add More Products
+                    </a>
+
+                </div>
+
+
+                <!-- JAVASCRIPT WILL DISPLAY PRODUCTS HERE -->
+
+                <div id="cart-items"></div>
+
+            </section>
+
+
+
+            <!-- ORDER SUMMARY -->
+
+            <aside class="order-summary">
+
+                <h2>Order Summary</h2>
+
+                <div class="summary-row">
+
+                    <span>Subtotal</span>
+
+                    <span id="cart-subtotal">₹0.00</span>
+
+                </div>
+
+                <div class="summary-row">
+
+                    <span>Delivery</span>
+
+                    <span>To be confirmed</span>
+
+                </div>
+
+                <div class="summary-divider"></div>
+
+                <div class="summary-row total-row">
+
+                    <strong>Total</strong>
+
+                    <strong id="cart-total">₹0.00</strong>
+
+                </div>
+
+
+                <button class="checkout-btn"
+                    onclick="checkoutWhatsApp()">
+
+                    Order on WhatsApp
+
+                </button>
+
+                <p class="checkout-note">
+                    Delivery charges, if applicable, will be confirmed
+                    before your order is finalized.
+                </p>
+
+            </aside>
+
+
+        </div>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <h2>BMS Ghee</h2>
+
+        <p>Fresh from our farm, naturally good.</p>
+
+        <p class="copyright">
+            © 2026 BMS Ghee. All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- CART JAVASCRIPT -->
+
+    <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/navigation.js"></script>
+
+</body>
+
+</html>
